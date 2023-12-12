@@ -1,0 +1,12 @@
+body {
+    width: 80%;
+    background-color: aliceblue;
+}
+
+input {
+    display:block
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block
+}
