@@ -6,46 +6,58 @@
     <link rel="stylesheet" href="survey_form.css">
 </head>
 <body>
-    <h1>freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name">
-        <label for="email">Email</label>
-        <input type="email" id="email">
-        <label for="age">Age (optional)</label>
-        <input type="number" id="age">
-        <label for="current_role">Which option best describes your current role?</label>
-        <select id="current_role" name="current_role">
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="your name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="your email id"required>
+        <label for="number" id="number-label">Age (optional)</label>
+        <input type="number" id="number" placeholder="your age in number of years" min=20 max=120>
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="current_role">
             <option value="">Select current role</option>
             <option value="student">Student</option>
             <option value="working_professional">Working Professional</option>
         </select>
         <p>Would you recommend freeCodeCamp to a friend?</p>
-        <input type="radio" name="recommend" id="definitely" checked>
-        <label for="definitely">Definitely</label>
-        <input type="radio" name="recommend" id="maybe">
-        <label for="maybe">Maybe</label>
-        <input type="radio" name="recommend" id="not_sure">
-        <label for="not_sure">Not sure</label>
-
+        <article>
+            <input type="radio" name="recommend" id="definitely" value="definitely"checked>
+            <label for="definitely">Definitely</label>
+        </article>
+        <article>
+            <input type="radio" name="recommend" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label>
+        </article>
+        <article>
+            <input type="radio" name="recommend" id="not_sure" value="not_sure">
+            <label for="not_sure">Not sure</label>
+        </article>
         <p>What is your favorite feature of freeCodeCamp?</p>
-        <select>
-            <option>select an option</option>
-            <option>challenges</option>
-            <option>projects</option>
-            <option>open source</option>
-            <option>community</option>
+        <select id="favorite_feature" name="favorite_feature">
+            <option value="">select an option</option>
+            <option value=1>challenges</option>
+            <option value=2>projects</option>
+            <option value=3>open source</option>
+            <option value=4>community</option>
         </select>
         <p>What would you like to see improved? (Check all that apply)</p>
-        <input type="checkbox" id="front_end">
-        <label for="front_end">Front-end_Projects</label>
-        <input type="checkbox" id="back_end">
-        <label for="back_end">Back-end_Projects</label>
-        <input type="checkbox" id="data_vis">
-        <label for="data_vis">Data Visualisation</label>
+        <aticle></aticle>
+            <input type="checkbox" id="front_end" value="front_end">
+            <label for="front_end">Front-end_Projects</label>
+        </aticle>
+        <article>
+            <input type="checkbox" id="back_end" value="back_end">
+            <label for="back_end">Back-end_Projects</label>
+        </article>
+        <article>
+            <input type="checkbox" id="data_vis" value="data_vis">
+            <label for="data_vis">Data Visualisation</label>
+        </article>
         <p>Any comments or suggestions?</p>
         <textarea></textarea>
+        <button type="submit" id="submit">Submit</button>
     </form>
 </body>
 </html>

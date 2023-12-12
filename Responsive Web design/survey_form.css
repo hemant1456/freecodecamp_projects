@@ -1,12 +1,33 @@
 body {
     width: 80%;
     background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-input {
+input, button {
     display:block
 }
 
 input[type="radio"], input[type="checkbox"] {
     display: inline-block
+}
+
+p, input {
+    margin: 0.5rem 0;
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+select {
+    display: block;
+    padding: 0;
+}
+
+button {
+    width: 20vw;
+    height: 3vh;
+    background-color:cadetblue;
 }
